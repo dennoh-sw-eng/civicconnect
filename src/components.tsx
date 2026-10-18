@@ -21,6 +21,7 @@ export function Layout() {
         <nav aria-label="Main">
           {profile && !staff && <><NavLink to="/requests">My requests</NavLink><NavLink to="/requests/new">Submit a request</NavLink></>}
           {staff && <NavLink to="/staff">Staff dashboard</NavLink>}
+          {profile?.role === 'admin' && <NavLink to="/admin">Administration</NavLink>}
           {profile ? <button className="link" onClick={signOut}>Sign out</button>
             : <><NavLink to="/login">Sign in</NavLink><NavLink to="/register" className="btn small">Register</NavLink></>}
         </nav>
