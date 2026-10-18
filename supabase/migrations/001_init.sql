@@ -1,4 +1,4 @@
--- CivicConnect schema. Run in the Supabase SQL editor or via `supabase db push`.
+-- i-citizen schema. Run in the Supabase SQL editor or via `supabase db push`.
 create type app_role as enum ('citizen','officer','supervisor','admin');
 create type request_status as enum ('PENDING','IN_PROGRESS','RESOLVED');
 create type request_priority as enum ('LOW','NORMAL','HIGH','URGENT');

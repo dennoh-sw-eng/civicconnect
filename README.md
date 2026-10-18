@@ -1,4 +1,4 @@
-# CivicConnect
+# i-citizen
 
 A citizen service-request and tracking prototype: React + TypeScript + Vite on the front end, Supabase (Postgres, Auth, Storage) as the backend, Netlify for hosting. All authorization is enforced in the database with Row Level Security and scope-checked SQL functions, not by hiding buttons.
 
@@ -27,8 +27,8 @@ npm run build          # type-check and production build
 
 ## 3. GitHub and Netlify
 ```
-git init && git add . && git commit -m "CivicConnect"
-git remote add origin https://github.com/YOU/civicconnect.git && git push -u origin main
+git init && git add . && git commit -m "i-citizen"
+git remote add origin https://github.com/YOU/i-citizen.git && git push -u origin main
 ```
 In Netlify: Add new site → Import from Git → pick the repo. `netlify.toml` already sets build command, `dist` publish folder, SPA redirects and security headers. Add environment variables `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, then deploy. Netlify serves HTTPS automatically. Update Supabase redirect URLs with the final site URL.
 

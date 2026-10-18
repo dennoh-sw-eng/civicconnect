@@ -17,7 +17,7 @@ export function Layout() {
   return (
     <>
       <header className="top">
-        <Link to="/" className="brand">CivicConnect</Link>
+        <Link to="/" className="brand">i-citizen</Link>
         <nav aria-label="Main">
           {profile && !staff && <><NavLink to="/requests">My requests</NavLink><NavLink to="/requests/new">Submit a request</NavLink></>}
           {staff && <NavLink to="/staff">Staff dashboard</NavLink>}
@@ -27,7 +27,7 @@ export function Layout() {
         </nav>
       </header>
       <main><Outlet /></main>
-      <footer className="foot">CivicConnect is a prototype. It is not an official government service.</footer>
+      <footer className="foot">i-citizen government service.</footer>
     </>
   )
 }
